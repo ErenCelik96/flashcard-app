@@ -1,5 +1,5 @@
 {
-  "name": "serb-lang",
+  "name": "flashcard-app",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
@@ -43,7 +43,8 @@
     "react-native-screens": "~4.1.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
-    "react-native-wheel-color-picker": "^1.3.1"
+    "react-native-wheel-color-picker": "^1.3.1",
+    "expo-updates": "~0.26.10"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
