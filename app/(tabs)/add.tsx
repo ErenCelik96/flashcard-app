@@ -37,7 +37,7 @@ export default function AddCard() {
   const [frontText, setFrontText] = useState("");
   const [backText, setBackText] = useState("");
   const [frontColor, setFrontColor] = useState(Colors.white);
-  const [backColor, setBackColor] = useState(Colors.secondary);
+  const [backColor, setBackColor] = useState('#ADD8E6');
   const [frontLang, setFrontLang] = useState("en-US");
   const [backLang, setBackLang] = useState("tr-TR");
   const [modalVisible, setModalVisible] = useState(false);
@@ -105,7 +105,7 @@ export default function AddCard() {
       setFrontText("");
       setBackText("");
       setFrontColor(Colors.white);
-      setBackColor(Colors.secondary);
+      setBackColor('#ADD8E6');
       setFrontLang("en-US");
       setBackLang("tr-TR");
       setSelectedFolderId(null);
