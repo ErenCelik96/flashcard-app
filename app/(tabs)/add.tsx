@@ -162,6 +162,7 @@ export default function AddCard() {
             placeholder="Enter the first word"
             placeholderTextColor={isLightColor(frontColor) ? Colors.text : Colors.white}
             style={[styles.input, { backgroundColor: frontColor }]}
+            maxLength={100}
           />
           <View style={styles.optionsRow}>
             <Pressable 
@@ -189,6 +190,7 @@ export default function AddCard() {
             placeholder="Enter the second word"
             placeholderTextColor={isLightColor(backColor) ? Colors.text : Colors.white}
             style={[styles.input, { backgroundColor: backColor }]}
+            maxLength={100}
           />
           <View style={styles.optionsRow}>
             <Pressable 

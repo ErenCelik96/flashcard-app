@@ -158,6 +158,10 @@ export default function Translate() {
 
   const handleTranslate = async () => {
     if (!text.trim() || isButtonDisabled) return;
+    if (text.length > 100) {
+      Alert.alert("Error", "Text is too long. Maximum 100 characters allowed.");
+      return;
+    }
 
     setIsLoading(true);
     setIsButtonDisabled(true);
@@ -290,6 +294,7 @@ export default function Translate() {
             placeholder="Enter text to translate"
             placeholderTextColor={Colors.lightGray}
             multiline
+            maxLength={100}
           />
           {text.length > 0 && (
             <TouchableOpacity

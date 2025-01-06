@@ -213,7 +213,7 @@ export default function FlashCardItem({ flashcard, onDelete }: FlashCardProps) {
 const styles = StyleSheet.create({
   container: {
     width: SCREEN_WIDTH - 32,
-    minHeight: 120,
+    minHeight: 140,
     marginVertical: 8,
   },
   card: {

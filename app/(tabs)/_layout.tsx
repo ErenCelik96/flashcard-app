@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { Platform } from "react-native";
+import { Platform, StyleSheet, View } from "react-native";
 import { Colors } from "@/constants/Colors";
 
 export default function TabLayout() {
@@ -40,8 +40,14 @@ export default function TabLayout() {
         options={{
           title: "Create",
           headerTitle: "Create Card",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="create" size={size} color={color} />
+          tabBarIcon: ({ color }) => (
+            <View style={styles.createIconContainer}>
+              <Ionicons 
+                name="add-circle" 
+                size={32} 
+                color={Colors.primary}
+              />
+            </View>
           ),
         }}
       />
@@ -58,3 +64,17 @@ export default function TabLayout() {
     </Tabs>
   );
 }
+
+const styles = StyleSheet.create({
+  createIconContainer: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    borderWidth: 2,
+    borderColor: Colors.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: Colors.white,
+    marginBottom: 20
+  },
+});
